@@ -1,6 +1,20 @@
 //THEME AND COLORING
+//home background
 $main: hsl(240, 12%, 18%);
-$secundary: hsl(0, 0%, 100%);
+//header background
+$foreground: black;
+//special words
+$secundary: #46e972;
+//text
+$textcolor: hsl(0, 0%, 100%);
 
 //FONTS
 $fancy-font: "Pacifico", cursive;
+//menu
+$main-font: "Roboto";
+
+//FONT SIZES
+$huge-font: 5rem;
+$big-font: 3rem;
+$regular-font: 2rem;
+$small-font: 1rem;
