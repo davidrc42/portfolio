@@ -1,0 +1,21 @@
+.introduction {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.introductionTitle {
+  font-family: $main-font;
+  font-size: $huge-font;
+  color: $textcolor;
+}
+
+.introductionSubtitle {
+  font-size: $regular-font;
+  color: $textcolor;
+  font-family: $main-font;
+}
+
+.introFancy {
+  display: inline;
+  color: $secundary;
+}

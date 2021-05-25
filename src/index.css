@@ -11,10 +11,11 @@
   height: 100vh;
   width: 100%;
   background: #282833;
+  position: absolute;
 }
 
 .header {
-  background-color: black;
+  background-color: #090a0b;
   width: 100%;
   height: 70px;
   display: -webkit-box;
@@ -24,6 +25,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 .menu {
@@ -37,13 +40,13 @@
   margin-right: 40px;
 }
 
-.skillsMenu {
-  color: #46e972;
-}
-
 .menuItem {
   cursor: pointer;
   margin-left: 20px;
+}
+
+.menu > .active {
+  color: #44e970;
 }
 
 .hidden {
@@ -65,5 +68,122 @@
   font-size: 2rem;
   color: white;
   font-family: "Roboto";
+}
+
+.introFancy {
+  display: inline;
+  color: #44e970;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  background: black;
+}
+
+.skills {
+  width: 100%;
+  background: #6343ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skillsHeader {
+  padding-top: 20vh;
+  font-family: "Roboto";
+}
+
+.skillsGrid {
+  display: -ms-grid;
+  display: grid;
+  height: 300px;
+  grid-gap: 1.5rem;
+  justify-items: center;
+}
+
+.skillCell {
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 600px) {
+  .skillsGrid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .skillsGrid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: cadetblue;
+}
+
+html {
+  scrollbar-face-color: #646464;
+  scrollbar-base-color: #646464;
+  scrollbar-3dlight-color: #646464;
+  scrollbar-highlight-color: #646464;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color: #000;
+  scrollbar-shadow-color: #646464;
+  scrollbar-dark-shadow-color: #646464;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #666;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #646464;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #666;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #646464;
+}
+
+::-webkit-resizer {
+  background-color: #666;
 }
 /*# sourceMappingURL=index.css.map */
