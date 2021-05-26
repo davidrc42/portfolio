@@ -19,6 +19,7 @@ const Menu = () => {
         to="skills"
         spy={true}
         smooth={true}
+        offset={-100}
         duration={500}>
         Skills
       </Link>

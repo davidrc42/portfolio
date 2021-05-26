@@ -10,8 +10,8 @@ const Skills = () => {
   return (
     <div className="skillsPage">
       <div className="skills" id="skills">
-        <h1 className="skillsHeader">Technologies I work with</h1>
         <section className="skillsGrid">
+          <h1 className="skillsHeader">Technologies I use</h1>
           <div className="skillCell">
             <img className="skillImage" src={html} alt="html5" />
             <p>Html 5</p>
@@ -35,8 +35,8 @@ const Skills = () => {
         </section>
       </div>
       <div className="accomplishments">
-        <h1 className="accomplishmentsHeader">Accomplishments</h1>
         <section className="accGrid">
+          <h1 className="accomplishmentsHeader">Accomplishments</h1>
           <div className="skillCell">
             <a
               target="_blank"
@@ -59,10 +59,24 @@ const Skills = () => {
           </div>
         </section>
       </div>
+      <div className="projects">
+        <section className="projectsGrid">
+          <h1 className="projectsHeader">Projects</h1>
+          <div className="skillCell">
+            <a
+              target="_blank"
+              href="https://www.freecodecamp.org/certification/chadray/responsive-web-design">
+              <img
+                className="skillImage"
+                src={responsive}
+                alt="responsive vertification"
+              />
+            </a>
+            <p>Nothing for now</p>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }
 export default Skills
-// remove borders from certificates
-// add projects grid
-// work more on responsiveness

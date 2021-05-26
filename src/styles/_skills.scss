@@ -2,24 +2,44 @@
   width: 100%;
   background: $foreground2;
   display: grid;
-  height: 2400px;
+  height: 3200px;
   grid-template-areas:
     "skills"
-    "accomplishments";
+    "accomplishments"
+    "projects";
+  font-size: $regular-font;
 }
 
 .skills {
   justify-self: center;
   grid-area: "skills";
-  padding-top: 20vh;
+  margin-top: 20vh;
+}
+
+.projects {
+  justify-self: center;
+  grid-area: "skills";
+  margin-top: 20vh;
 }
 
 .accomplishments {
   grid-area: "accomplishments";
   justify-self: center;
   font-family: $main-font;
+  margin-top: 20vh;
 }
 
+.projectsGrid {
+  display: grid;
+  grid-gap: 1.5rem;
+  justify-items: center;
+}
+
+.accGrid {
+  display: grid;
+  grid-gap: 1.5rem;
+  justify-items: center;
+}
 .skillsHeader {
   font-family: $main-font;
 }
@@ -45,12 +65,5 @@
 }
 
 .skillCell:hover {
-  opacity: 0.7;
-}
-
-.accGrid {
-  margin-top: 2rem;
-  display: grid;
-  grid-gap: 1.5rem;
-  justify-items: center;
+  opacity: 0.8;
 }
