@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-scroll"
+import { FaCode, FaEnvelope, FaHome } from "react-icons/fa"
 
 const Menu = () => {
   return (
@@ -11,7 +12,7 @@ const Menu = () => {
         spy={true}
         smooth={true}
         duration={500}>
-        About
+        <FaHome className="menuIcon" />
       </Link>
       <Link
         className="menuItem "
@@ -21,7 +22,7 @@ const Menu = () => {
         smooth={true}
         offset={-100}
         duration={500}>
-        Skills
+        <FaCode className="menuIcon" />
       </Link>
       <Link
         className="menuItem"
@@ -30,7 +31,7 @@ const Menu = () => {
         spy={true}
         smooth={true}
         duration={500}>
-        Contact
+        <FaEnvelope className="menuIcon" />
       </Link>
     </div>
   )

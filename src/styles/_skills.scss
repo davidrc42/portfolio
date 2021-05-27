@@ -2,7 +2,7 @@
   width: 100%;
   background: $foreground2;
   display: grid;
-  height: 3200px;
+  height: 3700px;
   grid-template-areas:
     "skills"
     "accomplishments"
@@ -60,10 +60,14 @@
 }
 
 .skillImage {
-  height: 250px;
-  width: 250px;
+  height: 270px;
+  width: 270px;
 }
 
 .skillCell:hover {
   opacity: 0.8;
+}
+
+.skillsHeader {
+  font-family: $fancy-font;
 }

@@ -1,16 +1,16 @@
 .menu {
   display: flex;
-  // flex-direction: column;
   list-style: none;
-  margin-left: auto;
   font-family: $main-font;
   color: $textcolor;
   margin-right: 40px;
+  margin-left: auto;
 }
 
 .menuItem {
   cursor: pointer;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .menu > .active {

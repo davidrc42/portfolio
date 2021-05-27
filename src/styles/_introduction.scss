@@ -1,10 +1,10 @@
 .introduction {
   margin-top: 30vh;
   margin-left: 10%;
+  font-family: $main-font;
 }
 
 .introductionTitle {
-  font-family: $main-font;
   font-size: $big-font;
   color: $textcolor;
 }
@@ -12,10 +12,10 @@
 .introductionSubtitle {
   font-size: $small-font;
   color: $textcolor;
-  font-family: $main-font;
 }
 
 .introFancy {
   display: inline;
   color: $secundary;
+  font-family: $fancy-font;
 }

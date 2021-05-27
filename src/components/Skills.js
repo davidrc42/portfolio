@@ -5,13 +5,14 @@ import javascript from "../images/js.png"
 import react from "../images/react.png"
 import sass from "../images/sass.png"
 import responsive from "../images/responsiveCert.png"
+import jscert from "../images/jsCert.png"
 
 const Skills = () => {
   return (
     <div className="skillsPage">
       <div className="skills" id="skills">
         <section className="skillsGrid">
-          <h1 className="skillsHeader">Technologies I use</h1>
+          <h1 className="skillsHeader skillsHeader">Technologies I use</h1>
           <div className="skillCell">
             <img className="skillImage" src={html} alt="html5" />
             <p>Html 5</p>
@@ -36,7 +37,9 @@ const Skills = () => {
       </div>
       <div className="accomplishments">
         <section className="accGrid">
-          <h1 className="accomplishmentsHeader">Accomplishments</h1>
+          <h1 className="skillsHeader accomplishmentsHeader">
+            Accomplishments
+          </h1>
           <div className="skillCell">
             <a
               target="_blank"
@@ -52,14 +55,14 @@ const Skills = () => {
           <div className="skillCell">
             <img
               className="skillImage"
-              src={responsive}
-              alt="responsive vertification"
+              src={jscert}
+              alt="javascrit data structures ann"
             />
             <p>FCC certificate</p>
           </div>
         </section>
       </div>
-      <div className="projects">
+      <div className="skillsHeader projects">
         <section className="projectsGrid">
           <h1 className="projectsHeader">Projects</h1>
           <div className="skillCell">

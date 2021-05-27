@@ -1,5 +1,46 @@
 .contact {
+  padding-top: 20vh;
   width: 100%;
   height: 100vh;
-  background-color: cadetblue;
+  background-color: black;
+  font-size: $big-font;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: $main-font;
+}
+
+.contactPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin-top: 2vh;
+  text-shadow: 2px 2px 1px #353535;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+.contactPart:hover {
+  transform: translateY(8px);
+}
+
+.contactText {
+  font-size: $regular-font;
+}
+
+.contactHeader {
+  font-size: $huge-font;
+  font-family: $fancy-font;
+  align-self: center;
+}
+
+.fancyWord {
+  color: $secundary;
+  display: inline;
+}
+
+.contactMedias {
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
 }
