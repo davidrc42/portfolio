@@ -1,5 +1,6 @@
 import React from "react"
 import {
+  FaEnvelope,
   FaGithub,
   FaMobile,
   FaMobileAlt,
@@ -16,17 +17,21 @@ const Contact = () => {
         <p className="fancyWord"> talk</p>
       </p>
       <div className="contactMedias">
-        <div className="contactPart">
+        <div className="github contactPart">
           <FaGithub />
           <p className="contactText">Github</p>
         </div>
-        <div className="contactPart">
+        <div className="reddit contactPart">
           <FaRedditAlien />
           <p className="contactText">Reddit</p>
         </div>
-        <div className="contactPart">
+        <div className="mobile contactPart">
           <FaMobileAlt />
-          <p className="contactText">Direct Message</p>
+          <p className="contactText">Mobile</p>
+        </div>
+        <div className="email contactPart">
+          <FaEnvelope />
+          <p className="contactText">Email</p>
         </div>
       </div>
     </div>

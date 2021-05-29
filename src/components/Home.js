@@ -4,7 +4,7 @@ import Introduction from "./Introduction"
 
 const Home = () => {
   return (
-    <div className="home">
+    <div id="home" className="home">
       <Header />
       <Introduction />
     </div>

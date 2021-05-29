@@ -2,15 +2,20 @@
   display: flex;
   list-style: none;
   font-family: $main-font;
-  color: $textcolor;
   margin-right: 40px;
   margin-left: auto;
 }
 
 .menuItem {
+  color: $textcolor;
   cursor: pointer;
   margin-left: 20px;
   margin-top: 10px;
+  display: flex;
+}
+
+.menuText {
+  display: none;
 }
 
 .menu > .active {

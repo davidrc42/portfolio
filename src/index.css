@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Convergence&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,7 +10,7 @@
 .home {
   height: 100vh;
   width: 100%;
-  background: #282833;
+  background: #000000;
   position: absolute;
 }
 
@@ -27,6 +27,8 @@
           align-items: center;
   position: fixed;
   top: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
 }
 
 .menu {
@@ -34,15 +36,16 @@
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin-left: auto;
   font-family: "Roboto";
   color: white;
   margin-right: 40px;
+  margin-left: auto;
 }
 
 .menuItem {
   cursor: pointer;
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .menu > .active {
@@ -54,25 +57,25 @@
 }
 
 .introduction {
-  margin-top: 10%;
+  margin-top: 30vh;
   margin-left: 10%;
+  font-family: "Roboto";
 }
 
 .introductionTitle {
-  font-family: "Roboto";
-  font-size: 5rem;
+  font-size: 2rem;
   color: white;
 }
 
 .introductionSubtitle {
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
-  font-family: "Roboto";
 }
 
 .introFancy {
   display: inline;
   color: #44e970;
+  font-family: "Convergence";
 }
 
 .about {
@@ -81,39 +84,124 @@
   background: black;
 }
 
-.skills {
+.skillsPage {
   width: 100%;
-  background: #6343ff;
+  background: #2069e0;
+  display: -ms-grid;
+  display: grid;
+  height: 2200px;
+      grid-template-areas: "skills" "accomplishments" "projects";
+}
+
+.skills {
+  justify-self: center;
+  grid-area: "skills";
+  margin-top: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.skillsHeader {
-  padding-top: 20vh;
+.projects {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  grid-area: "skills";
+}
+
+.accomplishments {
+  grid-area: "accomplishments";
+  justify-self: center;
   font-family: "Roboto";
+  margin-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projectsGrid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  justify-items: center;
+}
+
+.accGrid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
 }
 
 .skillsGrid {
   display: -ms-grid;
   display: grid;
-  height: 300px;
   grid-gap: 1.5rem;
   justify-items: center;
+  margin-top: 2rem;
 }
 
 .skillCell {
-  width: 200px;
-  height: 200px;
-  background-color: gray;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Roboto";
+  text-align: center;
+  background-color: #000000;
+  color: #d9d9d9;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.skillImage {
+  height: 150px;
+  width: 150px;
+}
+
+.skillCell:hover {
+  opacity: 0.8;
+}
+
+.skillsHeader {
+  font-family: "Convergence";
+  font-size: 2rem;
+}
+
+.accHeader {
+  font-family: "Convergence";
+  font-size: 2rem;
+}
+
+.projectsHeader {
+  font-family: "Convergence";
+  font-size: 2rem;
+}
+
+.contact {
+  padding-top: 20vh;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  font-size: 2rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto";
+}
+
+.contactPart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,26 +211,44 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 2vh;
+  text-shadow: 2px 2px 1px #222222;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  cursor: pointer;
 }
 
-@media (min-width: 600px) {
-  .skillsGrid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
+.contactPart:hover {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
 }
 
-@media (min-width: 900px) {
-  .skillsGrid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
+.contactText {
+  font-size: 1.2rem;
 }
 
-.contact {
-  width: 100%;
-  height: 100vh;
-  background-color: cadetblue;
+.contactHeader {
+  font-size: 3rem;
+  font-family: "Convergence";
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.fancyWord {
+  color: #44e970;
+  display: inline;
+}
+
+.contactMedias {
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 html {
@@ -185,5 +291,37 @@ html {
 
 ::-webkit-resizer {
   background-color: #666;
+}
+
+@media (min-width: 700px) {
+  * {
+    text-shadow: 2px 2px 1px #1d1d1d;
+  }
+  .skillsPage {
+    height: 2600px;
+  }
+  .skillsGrid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .sass {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  .skillsHeader {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .accGrid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .accHeader {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */

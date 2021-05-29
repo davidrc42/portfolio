@@ -8,11 +8,12 @@ const Menu = () => {
       <Link
         className="menuItem"
         activeClass="active"
-        to="about"
+        to="home"
         spy={true}
         smooth={true}
         duration={500}>
         <FaHome className="menuIcon" />
+        <p className="menuText">Home</p>
       </Link>
       <Link
         className="menuItem "
@@ -23,6 +24,7 @@ const Menu = () => {
         offset={-100}
         duration={500}>
         <FaCode className="menuIcon" />
+        <p className="menuText">Skills</p>
       </Link>
       <Link
         className="menuItem"
@@ -32,6 +34,7 @@ const Menu = () => {
         smooth={true}
         duration={500}>
         <FaEnvelope className="menuIcon" />
+        <p className="menuText">Contact</p>
       </Link>
     </div>
   )

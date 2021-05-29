@@ -16,7 +16,7 @@
   align-items: center;
   width: fit-content;
   margin-top: 2vh;
-  text-shadow: 2px 2px 1px #353535;
+  text-shadow: 2px 2px 1px #222222;
   transition: transform 0.3s ease-out;
   cursor: pointer;
 }
@@ -25,7 +25,7 @@
 }
 
 .contactText {
-  font-size: $regular-font;
+  font-size: $big-font;
 }
 
 .contactHeader {
@@ -43,4 +43,27 @@
   margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "Github"
+    "Reddit"
+    "Mobile"
+    "Email";
+}
+
+.github {
+  grid-area: "GitHub";
+}
+
+.reddit {
+  grid-area: "Reddit";
+}
+
+.mobile {
+  grid-area: "Mobile";
+}
+
+.email {
+  grid-area: "Email";
 }

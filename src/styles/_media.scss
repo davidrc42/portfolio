@@ -1,0 +1,73 @@
+@media (min-width: 300px) {
+  .introductionTitle {
+    font-size: 2.2rem;
+  }
+  .introductionSubtitle {
+    font-size: 1.5rem;
+  }
+  .contactPart {
+    font-size: 2rem;
+  }
+  .contactText {
+    font-size: 2rem;
+  }
+  .contactHeader {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .contactMedias {
+    grid-gap: 2rem;
+    grid-template-areas:
+      "Github Reddit"
+      "Mobile Email";
+  }
+
+  .skillsHeader {
+    font-size: 2.2rem;
+  }
+
+  .introductionTitle {
+    font-size: 2.7rem;
+  }
+  .skillsPage {
+    height: 1600px;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sass {
+    grid-column: 1 / span 2;
+  }
+
+  .skillsHeader {
+    align-self: center;
+  }
+  .accGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .accHeader {
+    align-self: center;
+  }
+}
+
+@media (min-width: 500px) {
+  .introductionTitle {
+    font-size: 3.3rem;
+  }
+}
+
+@media (min-width: 550px) {
+  .introductionTitle {
+    font-size: 3.7rem;
+  }
+  .menuIcon {
+    display: none;
+  }
+  .menuText {
+    display: block;
+  }
+}

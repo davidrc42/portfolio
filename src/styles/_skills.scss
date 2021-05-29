@@ -1,32 +1,35 @@
 .skillsPage {
   width: 100%;
+  color: $textcolor;
   background: $foreground2;
   display: grid;
-  height: 3700px;
+  height: 2200px;
   grid-template-areas:
     "skills"
     "accomplishments"
     "projects";
-  font-size: $regular-font;
 }
 
 .skills {
   justify-self: center;
   grid-area: "skills";
-  margin-top: 20vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects {
   justify-self: center;
   grid-area: "skills";
-  margin-top: 20vh;
 }
 
 .accomplishments {
   grid-area: "accomplishments";
   justify-self: center;
   font-family: $main-font;
-  margin-top: 20vh;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectsGrid {
@@ -39,19 +42,18 @@
   display: grid;
   grid-gap: 1.5rem;
   justify-items: center;
-}
-.skillsHeader {
-  font-family: $main-font;
+  margin-top: 2rem;
 }
 
 .skillsGrid {
   display: grid;
   grid-gap: 1.5rem;
   justify-items: center;
+  margin-top: 2rem;
 }
 .skillCell {
   padding: 0.5rem;
-  font-size: 1.2rem;
+  font-size: $small-font;
   font-family: $main-font;
   text-align: center;
   background-color: $main;
@@ -60,14 +62,26 @@
 }
 
 .skillImage {
-  height: 270px;
-  width: 270px;
+  height: 150px;
+  width: 150px;
 }
 
 .skillCell:hover {
   opacity: 0.8;
+  font-size: 1rem;
 }
 
 .skillsHeader {
   font-family: $fancy-font;
+  font-size: $big-font;
+}
+
+.accHeader {
+  font-family: $fancy-font;
+  font-size: $big-font;
+}
+
+.projectsHeader {
+  font-family: $fancy-font;
+  font-size: $big-font;
 }

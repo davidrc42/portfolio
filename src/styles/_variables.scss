@@ -1,22 +1,18 @@
 //THEME AND COLORING
-//home background
-$main: hsl(240, 12%, 18%);
-//header background
-$foreground: hsl(210, 9%, 4%);
-//skills background
-$foreground2: #6343ff;
-//special words
-$secundary: hsl(136, 79%, 59%);
-//text
-$textcolor: hsl(0, 0%, 100%);
+// $main: hsl(240, 12%, 18%)
+$main: #000000;
+$foreground: hsl(0, 0%, 0%);
+$foreground2: #006888;
+
+$secundary: hsl(136, 100%, 44%);
+$textcolor: hsl(0, 0%, 80%);
 
 //FONTS
 $fancy-font: "Convergence";
-//menu
 $main-font: "Roboto";
 
-//FONT SIZES
-$huge-font: 4rem;
-$big-font: 2.6rem;
-$regular-font: 1.5rem;
-$small-font: 1.3rem;
+//FONT SIZES(smallest device)
+$huge-font: 3rem;
+$big-font: 1.7rem;
+$regular-font: 1.1rem;
+$small-font: 1rem;

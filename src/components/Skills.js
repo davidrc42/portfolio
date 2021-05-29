@@ -11,35 +11,33 @@ const Skills = () => {
   return (
     <div className="skillsPage">
       <div className="skills" id="skills">
+        <h1 className="skillsHeader skillsHeader">Technologies I use</h1>
         <section className="skillsGrid">
-          <h1 className="skillsHeader skillsHeader">Technologies I use</h1>
-          <div className="skillCell">
-            <img className="skillImage" src={html} alt="html5" />
+          <div className="skillCell html">
+            <img className="skillImage " src={html} alt="html5" />
             <p>Html 5</p>
           </div>
-          <div className="skillCell">
+          <div className="skillCell css">
             <img className="skillImage" src={css} alt="css3" />
             <p>Css 3</p>
           </div>
-          <div className="skillCell">
+          <div className="skillCell js">
             <img className="skillImage" src={javascript} alt="javascript" />
             <p>Javascript</p>
           </div>
-          <div className="skillCell">
+          <div className="skillCell react">
             <img className="skillImage" src={react} alt="react" />
             <p>React js</p>
           </div>
-          <div className="skillCell">
+          <div className="skillCell sass">
             <img className="skillImage" src={sass} alt="sass" />
             <p>Sass</p>
           </div>
         </section>
       </div>
       <div className="accomplishments">
+        <h1 className="skillsHeader accomplishmentsHeader">Accomplishments</h1>
         <section className="accGrid">
-          <h1 className="skillsHeader accomplishmentsHeader">
-            Accomplishments
-          </h1>
           <div className="skillCell">
             <a
               target="_blank"
