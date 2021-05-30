@@ -18,20 +18,28 @@ const Contact = () => {
       </p>
       <div className="contactMedias">
         <div className="github contactPart">
-          <FaGithub />
-          <p className="contactText">Github</p>
+          <a target="_blank" href="https://github.com/davidrc42">
+            <FaGithub />
+            <p className="contactText">Github</p>
+          </a>
         </div>
         <div className="reddit contactPart">
-          <FaRedditAlien />
-          <p className="contactText">Reddit</p>
+          <a target="_blank" href="https://www.reddit.com/user/halumetri">
+            <FaRedditAlien />
+            <p className="contactText">Reddit</p>
+          </a>
         </div>
         <div className="mobile contactPart">
-          <FaMobileAlt />
-          <p className="contactText">Mobile</p>
+          <a href="tel:+40724947664">
+            <FaMobileAlt />
+            <p className="contactText">Mobile</p>
+          </a>
         </div>
         <div className="email contactPart">
-          <FaEnvelope />
-          <p className="contactText">Email</p>
+          <a href="https://mail.yahoo.com/d/compose/2886292491" target="_blank">
+            <FaEnvelope />
+            <p className="contactText">Email</p>
+          </a>
         </div>
       </div>
     </div>

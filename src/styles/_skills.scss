@@ -1,5 +1,6 @@
 .skillsPage {
   width: 100%;
+  padding-top: 20vh;
   color: $textcolor;
   background: $foreground2;
   display: grid;
@@ -13,23 +14,24 @@
 .skills {
   justify-self: center;
   grid-area: "skills";
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
-}
-
-.projects {
-  justify-self: center;
-  grid-area: "skills";
 }
 
 .accomplishments {
   grid-area: "accomplishments";
   justify-self: center;
   font-family: $main-font;
-  margin-top: 2vh;
   display: flex;
   flex-direction: column;
+}
+
+.projects {
+  justify-self: center;
+  grid-area: "projects";
+  display: flex;
+  flex-direction: column;
+  font-family: $main-font;
 }
 
 .projectsGrid {
@@ -42,17 +44,15 @@
   display: grid;
   grid-gap: 1.5rem;
   justify-items: center;
-  margin-top: 2rem;
 }
 
 .skillsGrid {
   display: grid;
   grid-gap: 1.5rem;
   justify-items: center;
-  margin-top: 2rem;
 }
 .skillCell {
-  padding: 0.5rem;
+  padding: 6px;
   font-size: $small-font;
   font-family: $main-font;
   text-align: center;

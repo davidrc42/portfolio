@@ -14,7 +14,7 @@ const Skills = () => {
         <h1 className="skillsHeader skillsHeader">Technologies I use</h1>
         <section className="skillsGrid">
           <div className="skillCell html">
-            <img className="skillImage " src={html} alt="html5" />
+            <img className="skillImage" src={html} alt="html" />
             <p>Html 5</p>
           </div>
           <div className="skillCell css">

@@ -14,9 +14,19 @@
   .contactHeader {
     font-size: 4rem;
   }
+  .monitor {
+    display: flex;
+    justify-content: center;
+  }
+  .monitorImage {
+    width: 290px;
+  }
 }
 
 @media (min-width: 400px) {
+  .monitorImage {
+    width: 350px;
+  }
   .contactMedias {
     grid-gap: 2rem;
     grid-template-areas:
@@ -55,12 +65,26 @@
 }
 
 @media (min-width: 500px) {
+  .introduction {
+    padding-top: 20vh;
+  }
+  .monitorImage {
+    width: 450px;
+  }
+  .monitorImage {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
   .introductionTitle {
     font-size: 3.3rem;
   }
 }
 
 @media (min-width: 550px) {
+  .monitorImage {
+    width: 500px;
+  }
   .introductionTitle {
     font-size: 3.7rem;
   }
@@ -69,5 +93,23 @@
   }
   .menuText {
     display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .monitorImage {
+    width: 600px;
+  }
+  .skillsPage {
+    height: 1300px;
+    grid-template-areas:
+      "skills accomplishments"
+      "projects projects";
+  }
+}
+
+@media (min-width: 1500px) {
+  .skillsPage {
+    grid-template-areas: "skills accimplishment projects";
   }
 }
