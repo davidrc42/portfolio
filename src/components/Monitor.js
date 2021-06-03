@@ -7,9 +7,19 @@ const Monitor = () => {
   return (
     <div className="monitor">
       <img
+        src={monitor}
+        alt="sorry if u can't see this it looks amazing"
+        className="monitorImage smallMonitor"
+      />
+      <img
+        src={bigTextMonitor}
+        alt="sorry if u can't see this it looks amazing"
+        className="monitorImage bigMonitor"
+      />
+      <img
         src={hugeTextMonitor}
         alt="sorry if u can't see this it looks amazing"
-        className="monitorImage"
+        className="monitorImage hugeMonitor"
       />
     </div>
   )

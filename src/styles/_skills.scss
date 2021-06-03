@@ -4,11 +4,10 @@
   color: $textcolor;
   background: $foreground2;
   display: grid;
-  height: 2200px;
+  height: 2000px;
   grid-template-areas:
     "skills"
-    "accomplishments"
-    "projects";
+    "accomplishments";
 }
 
 .skills {
@@ -74,6 +73,7 @@
 .skillsHeader {
   font-family: $fancy-font;
   font-size: $big-font;
+  margin-bottom: 10px;
 }
 
 .accHeader {

@@ -3,4 +3,17 @@
   bottom: 0;
   display: none;
   width: 100%;
+  z-index: 1;
+}
+
+.bigMonitor {
+  display: none;
+}
+
+.smallMonitor {
+  display: none;
+}
+
+.hugeMonior {
+  display: none;
 }

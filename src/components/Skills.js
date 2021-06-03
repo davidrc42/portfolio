@@ -43,7 +43,7 @@ const Skills = () => {
               target="_blank"
               href="https://www.freecodecamp.org/certification/chadray/responsive-web-design">
               <img
-                className="skillImage"
+                className="certificate skillImage"
                 src={responsive}
                 alt="responsive vertification"
               />
@@ -52,7 +52,7 @@ const Skills = () => {
           </div>
           <div className="skillCell">
             <img
-              className="skillImage"
+              className="certificate skillImage"
               src={jscert}
               alt="javascrit data structures ann"
             />
@@ -60,7 +60,7 @@ const Skills = () => {
           </div>
         </section>
       </div>
-      <div className="skillsHeader projects">
+      {/* <div className="skillsHeader projects">
         <section className="projectsGrid">
           <h1 className="projectsHeader">Projects</h1>
           <div className="skillCell">
@@ -76,7 +76,7 @@ const Skills = () => {
             <p>Nothing for now</p>
           </div>
         </section>
-      </div>
+      </div> */}
     </div>
   )
 }
