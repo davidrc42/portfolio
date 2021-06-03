@@ -8,12 +8,17 @@
 
 .bigMonitor {
   display: none;
+  bottom:0;
 }
 
 .smallMonitor {
   display: none;
+  position: sticky;
+  bottom:0;
 }
 
 .hugeMonior {
   display: none;
+  position: sticky;
+  bottom:0;
 }
