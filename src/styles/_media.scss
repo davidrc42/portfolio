@@ -116,18 +116,18 @@
   .bigMonitor {
     display: inherit;
   }
-}
-
-@media (min-width: 1400px) {
-  .monitorImage {
-    margin-right: 10vw;
-  }
   .certificate {
     width: 300px;
     height: 300px;
   }
   .accGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1400px) {
+  .monitorImage {
+    margin-right: 10vw;
   }
 }
 
