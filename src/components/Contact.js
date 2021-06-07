@@ -1,13 +1,14 @@
-import React from "react"
+import React from "react";
 import {
   FaEnvelope,
   FaGithub,
+  FaLinkedin,
   FaMobile,
   FaMobileAlt,
   FaPhone,
   FaReddit,
   FaRedditAlien,
-} from "react-icons/fa"
+} from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -35,15 +36,18 @@ const Contact = () => {
             <p className="contactText">Mobile</p>
           </a>
         </div>
-        <div className="email contactPart">
-          <a href="https://mail.yahoo.com/d/compose/2886292491" target="_blank">
-            <FaEnvelope />
-            <p className="contactText">Email</p>
+        <div className="linkedIn contactPart">
+          <a
+            href="https://www.linkedin.com/in/ioana-david-48b994213/"
+            target="_blank"
+          >
+            <FaLinkedin />
+            <p className="contactText">LinkedIn</p>
           </a>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
