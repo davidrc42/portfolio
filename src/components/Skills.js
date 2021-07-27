@@ -71,14 +71,19 @@ const Skills = () => {
       <div className="projects">
         <h1 className="projectsHeader skillsHeader">Projects i made</h1>
         <section className="projectsGrid">
-          <div className="skillCell pomodoro">
-            <img
-              className="project skillImage"
-              src={stt}
-              alt="simple time tool image"
-            />
-            <p>Pomodoro App</p>
-          </div>
+          <a
+            target="_blank"
+            href="https://github.com/davidrc42/simple-time-tool" rel="noreferrer"
+          >
+            <div className="skillCell pomodoro">
+              <img
+                className="project skillImage"
+                src={stt}
+                alt="simple time tool image"
+              />
+              <p>Pomodoro App</p>
+            </div>
+          </a>
         </section>
       </div>
     </div>

@@ -46,7 +46,7 @@
   }
 
   .skillsGrid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .skillsHeader {
@@ -95,13 +95,23 @@
   }
 }
 
+@media(min-width:700px){
+  .skillsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .certificate {
+    width: 250px;
+    height: 250px;
+  }
+  .project {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 @media (min-width: 1000px) {
   .monitorImage {
     width: 600px;
-  }
-  .skillsPage {
-    height: 1200px;
-    grid-template-areas: "skills accomplishments projects";
   }
 }
 
@@ -115,32 +125,25 @@
   .bigMonitor {
     display: inherit;
   }
-  .certificate {
-    width: 300px;
-    height: 300px;
-  }
-  .project {
-    width: 300px;
-    height: 300px;
-  }
+}
+
+@media (min-width: 1400px) {
   .accGrid {
     grid-template-columns: 1fr;
   }
   .projectsGrid {
     grid-template-columns: 1fr;
   }
-}
-
-@media (min-width: 1400px) {
+  .skillsPage {
+    height: 1200px;
+    grid-template-areas: "skills accomplishments projects";
+  }
   .monitorImage {
     margin-right: 10vw;
   }
 }
 
 @media (min-width: 1500px) {
-  .skillsPage {
-    grid-template-areas: "skills accomplishments projects";
-  }
   .monitorImage {
     width: 800px;
     margin-right: 5vw;
