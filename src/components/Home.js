@@ -1,7 +1,7 @@
-import React from "react"
-import Header from "./Header"
-import Introduction from "./Introduction"
-import Monitor from "./Monitor"
+import React from "react";
+import Header from "./Header";
+import Introduction from "./Introduction";
+import Monitor from "./Monitor";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <Introduction />
       <Monitor />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Introduction = () => {
   return (
@@ -8,7 +8,7 @@ const Introduction = () => {
         a <p className="introFancy"> web </p>developer
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Introduction
+export default Introduction;

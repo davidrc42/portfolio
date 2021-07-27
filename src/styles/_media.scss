@@ -46,11 +46,7 @@
   }
 
   .skillsGrid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .sass {
-    grid-column: 1 / span 2;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .skillsHeader {
@@ -61,6 +57,9 @@
   }
   .accHeader {
     align-self: center;
+  }
+  .projectsHeader{
+    align-self:center;
   }
 }
 
@@ -102,7 +101,7 @@
   }
   .skillsPage {
     height: 1200px;
-    grid-template-areas: "skills accomplishments";
+    grid-template-areas: "skills accomplishments projects";
   }
 }
 
@@ -120,7 +119,14 @@
     width: 300px;
     height: 300px;
   }
+  .project {
+    width: 300px;
+    height: 300px;
+  }
   .accGrid {
+    grid-template-columns: 1fr;
+  }
+  .projectsGrid {
     grid-template-columns: 1fr;
   }
 }
@@ -133,7 +139,7 @@
 
 @media (min-width: 1500px) {
   .skillsPage {
-    grid-template-areas: "skills accimplishment";
+    grid-template-areas: "skills accomplishments projects";
   }
   .monitorImage {
     width: 800px;
