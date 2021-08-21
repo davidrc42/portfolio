@@ -4,7 +4,7 @@
   color: $textcolor;
   background: $foreground2;
   display: grid;
-  height: 2300px;
+  height: 2700px;
   grid-template-areas:
     "skills"
     "accomplishments"
@@ -27,8 +27,8 @@
 }
 
 .projects {
-  justify-self: center;
   grid-area: "projects";
+  justify-self: center;
   display: flex;
   flex-direction: column;
   font-family: $main-font;

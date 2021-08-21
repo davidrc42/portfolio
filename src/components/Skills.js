@@ -8,6 +8,7 @@ import responsive from "../images/responsiveCert.png";
 import jscert from "../images/jsCert.png";
 import python from "../images/python.png";
 import stt from "../images/stt.png";
+import dexonlinecli from "../images/dexonlinecli.png";
 
 const Skills = () => {
   return (
@@ -41,6 +42,7 @@ const Skills = () => {
           </div>
         </section>
       </div>
+
       <div className="accomplishments">
         <h1 className="skillsHeader accomplishmentsHeader">Accomplishments</h1>
         <section className="accGrid">
@@ -62,28 +64,44 @@ const Skills = () => {
             <img
               className="certificate skillImage"
               src={jscert}
-              alt="javascrit data structures ann"
+              alt="javascrit data structures and angorithms"
             />
             <p>FCC certificate</p>
           </div>
         </section>
       </div>
+
       <div className="projects">
         <h1 className="projectsHeader skillsHeader">Projects i made</h1>
         <section className="projectsGrid">
-          <a
-            target="_blank"
-            href="https://github.com/davidrc42/simple-time-tool" rel="noreferrer"
-          >
-            <div className="skillCell pomodoro">
+          <div className="skillCell pomodoro">
+            <a
+              target="_blank"
+              href="https://github.com/davidrc42/simple-time-tool"
+              rel="noreferrer"
+            >
               <img
                 className="project skillImage"
                 src={stt}
-                alt="simple time tool image"
+                alt="simple time tool"
               />
-              <p>Pomodoro App</p>
-            </div>
-          </a>
+            </a>
+            <p>Pomodoro App</p>
+          </div>
+          <div className="skillCell dexonlinecli">
+            <a
+              href="https://github.com/davidrc42/dexonlineCLI"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="project skillImage"
+                src={dexonlinecli}
+                alt="dexonlineCLI"
+              />
+            </a>
+            <p>Dexonline scraper</p>
+          </div>
         </section>
       </div>
     </div>
